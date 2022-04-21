@@ -1,0 +1,12 @@
+
+.header__textPositionTitle{
+  line-height: 2.5rem;
+}
+
+.header__textPosition{
+  line-height: 3.5rem;
+}
+
+.header__borderRadius{
+  border-radius: 5px;
+}
