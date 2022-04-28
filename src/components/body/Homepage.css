@@ -1,6 +1,6 @@
 
 .homepagePosition{
-    margin-top: 150px
+    margin-top: 100px
 }
 
 .imageWidth{
@@ -8,6 +8,9 @@
     height: 400px;
 }
 
+.m-top{
+    margin-top: 50px;
+}
 
 
 .containerEstKey{
