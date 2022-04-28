@@ -3,6 +3,13 @@
     margin-top: 150px
 }
 
+.imageWidth{
+    width: 800px;
+    height: 400px;
+}
+
+
+
 .containerEstKey{
     height: 60px;
     width: 60px;
