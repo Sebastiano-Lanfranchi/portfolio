@@ -3,12 +3,12 @@ import create from 'zustand';
 export default create(set => ({
     isSelect: true,
     frontElem: false,
-    composerElem:false,
+    composerElem: false,
     photographerElem: false,
-    setIsSelect: isSelect=> set({isSelect}),
-    setFrontElem: frontElem => set({frontElem}),
-    setComposerElem: composerElem => set({composerElem}),
-    setPhotographerElem: photographerElem => set({photographerElem}),
+    setIsSelect: isSelect => set({ isSelect }),
+    setFrontElem: frontElem => set({ frontElem }),
+    setComposerElem: composerElem => set({ composerElem }),
+    setPhotographerElem: photographerElem => set({ photographerElem }),
     onOfHomepage(page) {
         if (page) {
             this.setIsSelect(false)
