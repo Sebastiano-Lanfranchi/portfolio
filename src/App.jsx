@@ -7,10 +7,10 @@ import './App.css'
 
 const App = () => {
     return (
-        <>
+        <div className="fade-in-left">
             <Header className="homepagePosition" />
             <Homepage />
-        </>
+        </div>
     )
 }
 

@@ -6,6 +6,11 @@ import React from 'react';
 
 ReactDOM.render(
     <React.StrictMode>
+        <div>
+            <video loop autoPlay muted id="bg-video">
+                <source src={require('./bg-video.mp4')} type="video/mp4"/>
+            </video>
+        </div>
          <App />
     </React.StrictMode>,
     document.getElementById('root')
