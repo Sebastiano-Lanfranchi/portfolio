@@ -1,6 +1,6 @@
 import './Homepage.css';
 import frntlg from '../../frntlg.jpg';
-import cmplg from '../../cmplg.jpg';
+import cmplg from '../../cmplg.jfif';
 import ptglg from '../../ptglg.jpg';
 import React from 'react';
 import useStore from '../services/store';
@@ -25,15 +25,17 @@ function Homepage() {
                         </div>
                     </div>
                     <div className='flex justify-between w-3/4 center-div'>
-                        <div className="w-1/3  cursor-pointer duration-500" onClick={() => store.onOfHomepage('frn')}>
-                            <img src={frntlg} className="imageWidth brightness-50 hover:brightness-125" alt="frn" />
-                            <div className="relative bottom-2/4 left-2/4 text-white font-bold">testo prova</div>
+                        <div className="w-1/3  cursor-pointer  mr-10" onClick={() => store.onOfHomepage('frn')}>
+                            <img src={frntlg} className="imageWidth brightness-50 hover:brightness-125 duration-500 rounded-3xl" alt="frn" />
+                            <div className="relative bottom-2/4 w-fit center-div text-white font-bold">testo prova</div>
                         </div>
-                        <div className="w-1/3  cursor-pointer duration-500" onClick={() => store.onOfHomepage('cmp')}>
-                            <img src={cmplg} className="imageWidth brightness-50 hover:brightness-125" alt="cmp" />
+                        <div className="w-1/3  cursor-pointer mr-10" onClick={() => store.onOfHomepage('cmp')}>
+                            <img src={cmplg} className="imageWidth brightness-50 hover:brightness-125  rounded-3xl" alt="cmp" />
+                            <div className="relative bottom-2/4 w-fit center-div text-white font-bold">testo prova</div>
                         </div>
                         <div className="w-1/3  cursor-pointer duration-500" onClick={() => store.onOfHomepage('pht')}>
-                            <img src={ptglg} className="imageWidth brightness-50 hover:brightness-125" alt="ptg" />
+                            <img src={ptglg} className="imageWidth brightness-50 hover:brightness-125 duration-500 rounded-3xl" alt="ptg" />
+                            <div className="relative bottom-2/4 w-fit center-div text-white font-bold">testo prova</div>
                         </div>
                     </div>
                 </div>
