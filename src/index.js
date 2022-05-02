@@ -1,10 +1,12 @@
-import App from './App';
-import './index.css';
-import ReactDOM from 'react-dom';
-import React from 'react';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-ReactDOM.render(
+root.render(
     <React.StrictMode>
         <div>
             <video loop autoPlay muted id="bg-video">
@@ -12,10 +14,10 @@ ReactDOM.render(
             </video>
         </div>
          <App />
-    </React.StrictMode>,
-    document.getElementById('root')
+    </React.StrictMode>
 );
 
+reportWebVitals();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
