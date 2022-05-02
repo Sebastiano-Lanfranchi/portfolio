@@ -37,8 +37,8 @@
     font-weight: bold;
 }
 
-.rainbow_text_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+.grey_text_animated {
+    background: linear-gradient(to right, #ffffff, #cecece , #949494, #5a5a5a, #161616);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

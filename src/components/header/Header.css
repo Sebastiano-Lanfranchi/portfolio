@@ -9,4 +9,6 @@
 
 .header__borderRadius{
   border-radius: 5px;
+  border-color: rgba(255, 210, 192, 0.5)
 }
+
