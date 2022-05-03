@@ -15,12 +15,19 @@ export default create(set => ({
             switch (page) {
                 case 'frn':
                     this.setFrontElem(true);
+                    this.setComposerElem(false);
+                    this.setPhotographerElem(false);
+
                     break;
                 case 'cmp':
                     this.setComposerElem(true)
+                    this.setFrontElem(false);
+                    this.setPhotographerElem(false);
                     break;
                 case 'pht':
-                    this.setPhotographerElem(true)
+                    this.setPhotographerElem(true);
+                    this.setComposerElem(false);
+                    this.setFrontElem(false);
                     break;
             }
         } else {

@@ -81,7 +81,7 @@ function Homepage() {
                                 <div className="card__overlay">
                                     <div className="card__header">
                                         <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                        <FontAwesomeIcon className="card__thumb" icon={faGithub} /> 
+                                        <FontAwesomeIcon className="card__thumb" icon={faGithub} />
                                         <div className="card__header-text">
                                             <h3 className="card__title">Esercitazione template Phox</h3>
                                             <span className="card__status">25/02/2021</span>
@@ -97,7 +97,7 @@ function Homepage() {
                                 <div className="card__overlay">
                                     <div className="card__header">
                                         <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                        <FontAwesomeIcon className="card__thumb" icon={faGithub} /> 
+                                        <FontAwesomeIcon className="card__thumb" icon={faGithub} />
                                         <div className="card__header-text">
                                             <h3 className="card__title">Boolflix</h3>
                                             <span className="card__status">15/02/2021</span>
@@ -113,7 +113,7 @@ function Homepage() {
                                 <div className="card__overlay">
                                     <div className="card__header">
                                         <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                        <FontAwesomeIcon className="card__thumb" icon={faGithub} /> 
+                                        <FontAwesomeIcon className="card__thumb" icon={faGithub} />
                                         <div className="card__header-text">
                                             <h3 className="card__title">Esercitazione grafica Spotify</h3>
                                             <span className="card__status">9/12/2020</span>
@@ -141,22 +141,43 @@ function Homepage() {
                         </li>
                     </ul>
                     <div className="w-fit center-div">
-                         <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
+                        <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
                     </div>
-                   
+
                 </div>
             }
             {store.composerElem &&
                 <div>
-                    <div>Sono il compositore</div>
-                    <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}>prova</button>
-                </div>
+                    <div className="w-1/3 center-div text-white">
+                        <p>
+                            Mi è sempre piaciuta la musica, grazie ad una piccola pianola che avevo a casa iniziai a strimpellare "Fra martino" ad orecchio;
+                            lentamente senza accorgermene stavo migliorando, sempre suonando ad orecchio e senza avere preso lezioni composi "Happy goodbey".
+                            A qualcuno piacque, cosi ho continuato a suonare e dal 2018 ad oggi ho pubblicando 3 album e due singoli.
+                        </p>
+                    </div>
+                    <h1 className="text-white font-bold w-11/12 center-div titleFont text-5xl">I miei album :</h1>
+                    <div className="flex justify-around">
+                        <iframe style={{ borderRadius: 12 + 'px' }} src="https://open.spotify.com/embed/album/6CkqzIwE3tgOeMPrLahG6l?utm_source=generator" className="center-div" width="25%" height="200" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style={{ borderRadius: 12 + 'px' }} src="https://open.spotify.com/embed/album/1j3eMV2Dlu6mvSK2eBQuN9?utm_source=generator" className="center-div" width="25%" height="200" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style={{ borderRadius: 12 + 'px' }} src="https://open.spotify.com/embed/album/2Xq4yrer194AsQwjVutH3Z?utm_source=generator" className="center-div" width="25%" height="200" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                    <h1 className="text-white font-bold w-11/12 center-div titleFont text-5xl">I miei singoli :</h1>
+                    <div className="flex justify-around">
+                        <iframe style={{ borderRadius: 12 + 'px' }} src="https://open.spotify.com/embed/album/5LUQ17DmZEACm4IOcnFTsd?utm_source=generator" width="25%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style={{ borderRadius: 12 + 'px' }} src="https://open.spotify.com/embed/album/5du4OR9aVmit9dQPiC0nL0?utm_source=generator" width="25%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div>
+                    <div className="w-fit center-div">
+                        <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
 
+                    </div>
+                </div>
             }
             {store.photographerElem &&
                 <div>
                     <div>Sono il fotografo</div>
-                    <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}>prova</button>k
+                    <div className="w-fit center-div">
+                        <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
+                    </div>
                 </div>
 
             }
