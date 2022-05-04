@@ -21,9 +21,9 @@ function Homepage() {
     };
 
     return (
-        <div className="homepagePosition w-full fade-in-left" >
+        <div className="homepagePosition w-full" >
             {store.isSelect &&
-                <div>
+                <div className="fade-in-left">
                     <div className='flex justify-between w-1/2 center-div pb-6 text-white'>
                         <div name="prima colonna" className="mr-10">
                             Ciao, sono uno sviluppatore Frontend, sviluppo in particolare con
@@ -66,7 +66,7 @@ function Homepage() {
                 </div>
             }
             {store.frontElem &&
-                <div>
+                 <div className="fade-in-left">
                     <div className="w-1/3 center-div text-white">
                         <p>
                             L'informatica mi ha sempre incuriosito, già da piccolo avevo un vecchio PC con win 95 da cui tutto è iniziato.
@@ -125,7 +125,7 @@ function Homepage() {
                         </li>
                         <li>
                             <a href="https://guazzabuglio.com/" className="card">
-                                <img src="https://media-exp1.licdn.com/dms/image/C4D2DAQF8Y9btsUNrcw/profile-treasury-image-shrink_800_800/0/1651572014140?e=2147483647&v=beta&t=2uVnH1VVFvlspEzjQ_uTXWYIqRTuAZUIqc-gQtXV0Nw" className="card__image" alt="" />
+                                <img src="https://media-exp1.licdn.com/dms/image/C4D2DAQE-qS1KB42e1g/profile-treasury-image-shrink_800_800/0/1651674381199?e=1651762800&v=beta&t=Zt6p8RoNsdcp-lDlD1XAuSfyE3XgX5YLKxEW2mzhg68" className="card__image" alt="" />
                                 <div className="card__overlay">
                                     <div className="card__header">
                                         <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
@@ -147,7 +147,7 @@ function Homepage() {
                 </div>
             }
             {store.composerElem &&
-                <div>
+                 <div className="fade-in-left">
                     <div className="w-1/3 center-div text-white">
                         <p>
                             Mi è sempre piaciuta la musica, grazie ad una piccola pianola che avevo a casa iniziai a strimpellare "Fra martino" ad orecchio;
@@ -166,9 +166,8 @@ function Homepage() {
                         <iframe style={{ borderRadius: 12 + 'px' }} src="https://open.spotify.com/embed/album/5LUQ17DmZEACm4IOcnFTsd?utm_source=generator" width="25%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <iframe style={{ borderRadius: 12 + 'px' }} src="https://open.spotify.com/embed/album/5du4OR9aVmit9dQPiC0nL0?utm_source=generator" width="25%" height="80" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
-                    <div className="w-fit center-div">
+                    <div className="w-fit center-div pt-6">
                         <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
-
                     </div>
                 </div>
             }
@@ -179,7 +178,6 @@ function Homepage() {
                         <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
                     </div>
                 </div>
-
             }
         </div>
     )

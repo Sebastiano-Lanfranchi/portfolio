@@ -29,6 +29,11 @@ export default create(set => ({
                     this.setComposerElem(false);
                     this.setFrontElem(false);
                     break;
+                case 'hom':
+                    this.setPhotographerElem(false);
+                    this.setComposerElem(false);
+                    this.setFrontElem(false);
+                    this.setIsSelect(true);
             }
         } else {
             if (this.isSelect)
