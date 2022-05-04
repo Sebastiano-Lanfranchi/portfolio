@@ -1,0 +1,33 @@
+[debug] [2022-05-04T15:55:37.225Z] ----------------------------------------------------------------------
+[debug] [2022-05-04T15:55:37.228Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sebastiano.lanfranch\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --project sebastiano-lanfranchi
+[debug] [2022-05-04T15:55:37.228Z] CLI Version:   10.7.2
+[debug] [2022-05-04T15:55:37.229Z] Platform:      win32
+[debug] [2022-05-04T15:55:37.229Z] Node Version:  v14.17.3
+[debug] [2022-05-04T15:55:37.230Z] Time:          Wed May 04 2022 17:55:37 GMT+0200 (Ora legale dell’Europa centrale)
+[debug] [2022-05-04T15:55:37.230Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-04T15:55:37.314Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-04T15:55:37.314Z] > authorizing via signed-in user (sebastiano.lanfranchi@gmail.com)
+[debug] [2022-05-04T15:55:37.314Z] [iam] checking project sebastiano-lanfranchi for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-04T15:55:37.317Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sebastiano-lanfranchi:testIamPermissions [none]
+[debug] [2022-05-04T15:55:37.317Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sebastiano-lanfranchi:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-04T15:55:38.353Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sebastiano-lanfranchi:testIamPermissions 200
+[debug] [2022-05-04T15:55:38.354Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sebastiano-lanfranchi:testIamPermissions {}
+[debug] [2022-05-04T15:55:38.355Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project sebastiano-lanfranchi:
+
+  datastore.indexes.create
+  datastore.indexes.delete
+  datastore.indexes.list
+  datastore.indexes.update
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-05-04T15:55:38.358Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sebastiano-lanfranchi [none]
+[debug] [2022-05-04T15:55:38.751Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sebastiano-lanfranchi 403
+[debug] [2022-05-04T15:55:38.751Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sebastiano-lanfranchi {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-05-04T15:55:38.752Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-05-04T15:55:38.930Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\sebastiano.lanfranch\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at RetryOperation._fn (C:\Users\sebastiano.lanfranch\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:286:39)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[error] 
+[error] Error: Failed to get Firebase project sebastiano-lanfranchi. Please make sure the project exists and your account has permission to access it.
