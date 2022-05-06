@@ -125,7 +125,7 @@ function Homepage() {
                         </li>
                         <li>
                             <a href="https://guazzabuglio.com/" className="card">
-                                <img src="https://media-exp1.licdn.com/dms/image/C4D2DAQE-qS1KB42e1g/profile-treasury-image-shrink_800_800/0/1651674381199?e=1651762800&v=beta&t=Zt6p8RoNsdcp-lDlD1XAuSfyE3XgX5YLKxEW2mzhg68" className="card__image" alt="" />
+                                <img src="https://media-exp1.licdn.com/dms/image/C4D2DAQE-qS1KB42e1g/profile-treasury-image-shrink_800_800/0/1651674381199?e=1651910400&v=beta&t=aUD11TIdI3Zph6BcfxMWkHqReO1YhBGaoQV5Axm50X0" className="card__image" alt="" />
                                 <div className="card__overlay">
                                     <div className="card__header">
                                         <svg className="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
@@ -174,6 +174,14 @@ function Homepage() {
             {store.photographerElem &&
                 <div>
                     <div>Sono il fotografo</div>
+                    <div className="w-fit center-div">
+                        <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
+                    </div>
+                </div>
+            }
+             {store.contactElem &&
+                <div>
+                    <div>Sono i contatti</div>
                     <div className="w-fit center-div">
                         <button className="bg-slate-400 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded" onClick={() => store.onOfHomepage(null)}><FontAwesomeIcon icon={faHome} /></button>
                     </div>
